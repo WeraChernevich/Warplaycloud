@@ -1,0 +1,135 @@
+.registration-visible {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    overflow-y: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(20, 28, 36, 1);
+    z-index: 20;
+}
+
+.registration-visible.active {
+    display: block;
+
+}
+
+.registration {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+    background: rgba(20, 28, 36, 1);
+    z-index: 20;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 50px;
+
+
+}
+
+.registration__title {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 50px;
+}
+
+.registration__title span {
+    width: calc(var(--index) * 3);
+    background: none;
+    font-family: 'Aire Exterior';
+    color: #FFF;
+    font-size: calc(var(--index) * 1.8);
+    font-weight: 400;
+}
+
+
+.registration__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 25px;
+}
+
+.registration__form input {
+    width: calc(var(--index) * 19);
+    height: calc(var(--index) * 3.5);
+    border-radius: 5px;
+    background: #FFF;
+    padding-left: 10px;
+
+    &::placeholder {
+        color: rgba(0, 0, 0, 0.50);
+    }
+
+}
+
+.registration button {
+    color: #000;
+    font-family: "Aire Exterior";
+    font-size: calc(var(--index) * .9);
+    font-weight: 400;
+    width: calc(var(--index) * 9);
+    height: calc(var(--index) * 2);
+    background: #FFF;
+}
+
+.registration__form-agree {
+    width: calc(var(--index) * 19);
+    display: flex;
+    flex-direction: row;
+    column-gap: 50px;
+}
+
+.registration__form-agree input {
+    width: 24px;
+    height: 24px;
+}
+
+.registration__form-agree p {
+    font-size: calc(var(--index) * .6);
+}
+
+.registration__form-in {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.registration__form-in span:nth-child(1) {
+    position: absolute;
+    left: 0;
+    width: calc(var(--index) *4);
+    height: 1px;
+    background: rgba(255, 255, 255, 0.50);
+
+}
+
+.registration__form-in span:nth-child(2) {
+    position: absolute;
+    right: 0;
+    width: calc(var(--index) * 4);
+    height: 1px;
+    background: rgba(255, 255, 255, 0.50);
+
+}
+
+.registration__form-icon {
+    width: calc(var(--index) * 8);
+    height: calc(var(--index) * 3);
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(5, 25px);
+
+
+}

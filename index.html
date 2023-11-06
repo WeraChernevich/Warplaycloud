@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=eadge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" defer />
+    <link rel="stylesheet" href='./css/main.css'>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js" defer></script>
+    <script src="./app.js" defer></script>
+    <title>Warplaycloud</title>
+</head>
+
+<body>
+    <section class="upgrade-visible">
+        <div class="upgrade">
+            <div class="upgrade__title">
+                <span id="closeUp">&#8249;</span>
+                <h2>Выберете операционную систему</h2>
+            </div>
+            <div class="upgrade__pic">
+                <img src="./img/upgrade/Windows 10.svg" alt="W">
+                <img src="./img/upgrade/Mac Client.svg" alt="M">
+                <img src="./img/upgrade/Linux.svg" alt="L">
+                <img src="./img/upgrade/Chrome.svg" alt="C">
+            </div>
+        </div>
+    </section>
+    <section class="contacts-visible">
+        <div class="contacts">
+            <div class="contacts__title">
+                <span id="closeContacts">&#8249;</span>
+                <h2>Контакты</h2>
+            </div>
+            <div class="contacts__pic">
+                <img src="./img/footer/VK com.svg" alt="VK">
+                <img src="./img/footer/Discord.svg" alt="D">
+                <img src="./img/footer/YouTube.svg" alt="Y">
+            </div>
+        </div>
+    </section>
+    <section class="registration-visible">
+        <div class="registration">
+            <div class="registration__title">
+                <span id="closeRegistration">&#8249;</span>
+                <h2>Регистрация</h2>
+                <h2 style="color: rgba(255, 255, 255, 0.50);">Вход</h2>
+            </div>
+            <form class="registration__form" action="POST">
+                <input type="text" placeholder="Почта / Телефон">
+                <input type="text" placeholder="Пароль">
+                <button>Зарегистрироваться</button>
+                <div class="registration__form-agree">
+                    <input type="checkbox" id="politics" onclick="check();" value="" autocomplete="off" />
+                    <p>Я соглашаюсь со следующими установленными правилами: Политика использования файлов cookie
+                        WARPLAY.CLOUD,
+                        Пользовательское соглашение WARPLAY.CLOUD, Лицензионное соглашение MY.GAMES с конечным
+                        пользователем в отношении Игр,
+                        Лицензионное соглашение с конечным Пользователем для WARPLAY.CLOUD Игрового центра, Политика
+                        конфиденциальности портала
+                        WARPLAY.CLOUD, Политика конфиденциальности WARPLAY.CLOUD для детей</p>
+                </div>
+                <div class="registration__form-in">
+                    <span></span>
+                    <span></span>
+                    <p>Войти через</p>
+                </div>
+                <ul class="registration__form-icon">
+                    <li><a href="#!"><img src="./img/reg/Mail.ru.svg" alt="M"></a></li>
+                    <li><a href="#!"><img src="./img/reg/VK.svg" alt="VK"></a></li>
+                    <li><a href="#!"><img src="./img/reg/OK.svg" alt="OK"></a></li>
+                    <li><a href="#!"><img src="./img/reg/Facebook.svg" alt="F"></a></li>
+                    <li><a href="#!"><img src="./img/reg/Google.svg" alt="G"></a></li>
+                    <li></li>
+                    <li><a href="#!"><img src="./img/reg/Twitch.svg" alt="T"></a></li>
+                    <li><a href="#!"><img src="./img/reg/Twitter.svg" alt="X"></a></li>
+                    <li><a href="#!"><img src="./img/reg/Apple.svg" alt="A"></a></li>
+                </ul>
+            </form>
+        </div>
+    </section>
+    <section class="subscription-visible">
+        <div class="subscription">
+            <div class="subscription-visible__title">
+                <span id="closeSubscription">&#8249;</span>
+                <h2>Доступные подписки</h2>
+            </div>
+            <div class="subscription__cards">
+                <div class="subscription__cards-item">
+                    <h4 class="subscription__cards-title">Почасовая<br>оплата</h4>
+                    <p class="subscription__cards-price">45 р. - час</p>
+                    <ul class="subscription__cards-list">
+                        <li>Доступно:</li>
+                        <li>Каталог игр</li>
+                        <li>Виртуальный ПК</li>
+                        <li>Безлимитная игровая сессия</li>
+                    </ul>
+                    <button class="subscription__cards-btn" id="pushOne"><a href="#!">Выбрать</a></button>
+                </div>
+                <div class="subscription__cards-item">
+                    <h4 class="subscription__cards-title">Подписка<br>Максимум</h4>
+                    <p class="subscription__cards-price">2999 р. - месяц</p>
+                    <ul class="subscription__cards-list">
+                        <li>Доступно: </li>
+                        <li>Каталог игр</li>
+                        <li>Виртуальный ПК</li>
+                        <li>Игровая сессия 10 часов/день</li>
+                    </ul>
+                    <button class="subscription__cards-btn" id="pushTwo"><a href="#!">Выбрать</a></button>
+                </div>
+                <div class="subscription__cards-item">
+                    <h4 class="subscription__cards-title">Подписка<br>Минимум</h4>
+                    <p class="subscription__cards-price">1500 р. - месяц</p>
+                    <ul class="subscription__cards-list">
+                        <li>Доступно:</li>
+                        <li>Каталог игр</li>
+                        <li>Игровая сессия 4 часов/день</li>
+                    </ul>
+                    <button class="subscription__cards-btn" id="pushThree"><a href="#!">Выбрать</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <header class="header">
+        <div class="header__nav swiper">
+            <div class="header__logo"><img src="./img/header/header_logo.svg" alt="logo"></div>
+            <div class="header__nav-button">
+                <div class="header__nav-button-burger">
+                    <!-- <span></span>
+                    <span></span> -->
+                </div>
+            </div>
+            <ul class="header__navbar">
+                <li class="header__navbar-list"><a href="#!">Главная</a></li>
+                <li class="header__navbar-list"><a href="#!">Сервера</a></li>
+                <li class="header__navbar-list" id="openUp"><a href="#!">Скачать</a></li>
+                <li class="header__navbar-list"><a
+                        href="https://www.figma.com/file/RgFC03AHQt0I6ElRvsNnlc/Warplaycloud-%2B?node-id=24%3A36&mode=dev">Открыть
+                        в браузере</a></li>
+                <li class="header__navbar-list"><a href="#!">Цены</a></li>
+                <li class="header__navbar-list"><a href="#!">Тех поддержка</a></li>
+                <li class="header__navbar-list" id="openContacts"><a href="#!">Контакты</a></li>
+            </ul>
+        </div>
+        <div class="header__title">
+            <div>
+                <h1>Сервис облачного гейминга</h1>
+                <h2>Преврати свое устройство в игровое</h2>
+            </div>
+            <button id="openUpgrade">UPGRADE</button>
+        </div>
+        <div class="header__wrapper swiper">
+            <div class="header__swiper swiper-wrapper">
+                <div class="header__slide swiper-slide">
+                    <img style="height: 100vh; object-fit:cover;" src="./img/header/slide01.jpeg" alt="01">
+                </div>
+                <div class="header__slide swiper-slide">
+                    <img style="height: 100vh; object-fit:cover;" src="./img/header/slide02.jpeg" alt="02">
+                </div>
+                <div class="header__slide swiper-slide">
+                    <img style="height: 100vh; object-fit:cover;" src="./img/header/slide03.jpeg" alt="03">
+                </div>
+                <div class="header__slide swiper-slide">
+                    <img style="height: 100vh; object-fit:cover;" src="./img/header/slide04.jpeg" alt="04">
+                </div>
+            </div>
+        </div>
+        <section class="mobile-visible">
+            <div class="mobile">
+                <ul class="mobile__navbar">
+                    <li class="mobile__navbar-list"><a href="#!">Главная</a></li>
+                    <li class="mobile__navbar-list"><a href="#!">Сервера</a></li>
+                    <li class="mobile__navbar-list" id="openUp"><a href="#!">Скачать</a></li>
+                    <li class="mobile__navbar-list"><a
+                            href="https://www.figma.com/file/RgFC03AHQt0I6ElRvsNnlc/Warplaycloud-%2B?node-id=24%3A36&mode=dev">Открыть
+                            в браузере</a></li>
+                    <li class="mobile__navbar-list"><a href="#!">Цены</a></li>
+                    <li class="mobile__navbar-list"><a href="#!">Тех поддержка</a></li>
+                    <li class="mobile__navbar-list" id="openContacts"><a href="#!">Контакты</a></li>
+                </ul>
+                <div class="mobile__items">
+                    <ul class="mobile__items-icon">
+                        <li><a href="#!"><img src="./img/footer/VK com.svg" alt="VK"></a></li>
+                        <li><a href="#!"><img src="./img/footer/Discord.svg" alt="D"></a></li>
+                        <li><a href="#!"><img src="./img/footer/YouTube.svg" alt=""></a></li>
+                    </ul>
+                </div>
+                <div class="mobile__btn">
+                    <span></span>
+                    <p>&#8249;</p>
+                </div>
+            </div>
+        </section>
+    </header>
+    <section>
+        <div class="game-works">
+            <img class="game-works__pic" src="./img/game-works/laptop.svg" alt="laptop">
+            <div class="game-works__title">
+                <div class="game-works__subtitle">
+                    <span></span>
+                    <h3>Облачный гейминг</h3>
+                </div>
+                <div class="game-works__method">
+                    <h4>Как это работает</h4>
+                    <p>Наши сервера запускают игру, и передают
+                        вам картинку, которой вы можете управлять
+                        в реальном времени!</p>
+                    <span></span>
+                    <img class="game-works__img" src="./img/game-works/laptop.svg" alt="laptop">
+                    <p>Приложение запустится на ПК с процессором
+                        от 1.5 GHz, от 1 Gb RAM и доступом в интернет
+                        от 15 мбит/с на всех операционых системах
+                        Windows 7, 8, 10 MacOS и Linux.</p>
+                </div>
+                <div class="game-works__download">
+                    <a href="#!">
+                        <h3>Загрузить</h3>
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="start-game">
+            <div class="start-game__title">
+                <span></span>
+                <h3>Быстрый старт</h3>
+            </div>
+            <h4>Начни играть</h4>
+            <div class="start-game__icon">
+                <a href="#!">
+                    <img src="./img/start game/Mail Contact.svg" alt="mail">
+                    <p>Cоздайте аккаунт</p>
+                </a>
+                <div><span></span></div>
+                <a href="#!">
+                    <img src="./img/start game/Download from the Cloud.svg" alt="cloud">
+                    <p>Cкачайте модуль</p>
+                </a>
+                <div><span></span></div>
+                <a href="#!">
+                    <img src="./img/start game/Ds3 Tool.svg" alt="tool">
+                    <p>Выберите тариф</p>
+                </a>
+                <div><span></span></div>
+                <a id="openReg" href="#!">
+                    <img src="./img/start game/Apple Arcade.svg" alt="arcade">
+                    <p>Начни играть</p>
+                </a>
+            </div>
+            <div id="openRegistration" class="start-game__play">
+                <a href="#!">
+                    <h3>Начать</h3>
+                    <span></span>
+            </div></a>
+        </div>
+    </section>
+    <section>
+        <div class="subscription">
+            <div class="subscription__title">
+                <span></span>
+                <h3>Гибкие тарифы</h3>
+            </div>
+            <h4>Доступные подписки</h4>
+            <div class="subscription__cards">
+                <div class="subscription__cards-item">
+                    <h4 class="subscription__cards-title">Почасовая<br>оплата</h4>
+                    <p class="subscription__cards-price">45 р. - час</p>
+                    <ul class="subscription__cards-list">
+                        <li>Доступно:</li>
+                        <li>Каталог игр</li>
+                        <li>Виртуальный ПК</li>
+                        <li>Безлимитная игровая сессия</li>
+                    </ul>
+                    <button class="subscription__cards-btn" id="openSubscription"><a href="#!">Выбрать</a></button>
+                </div>
+                <div class="subscription__cards-item">
+                    <h4 class="subscription__cards-title">Подписка<br>Максимум</h4>
+                    <p class="subscription__cards-price">2999 р. - месяц</p>
+                    <ul class="subscription__cards-list">
+                        <li>Доступно: </li>
+                        <li>Каталог игр</li>
+                        <li>Виртуальный ПК</li>
+                        <li>Игровая сессия 10 часов/день</li>
+                    </ul>
+                    <button class="subscription__cards-btn" id="openSubscription"><a href="#!">Выбрать</a></button>
+                </div>
+                <div class="subscription__cards-item">
+                    <h4 class="subscription__cards-title">Подписка<br>Минимум</h4>
+                    <p class="subscription__cards-price">1500 р. - месяц</p>
+                    <ul class="subscription__cards-list">
+                        <li>Доступно:</li>
+                        <li>Каталог игр</li>
+                        <li>Игровая сессия 4 часов/день</li>
+                    </ul>
+                    <button class="subscription__cards-btn" id="openSubscription"><a href="#!">Выбрать</a></button>
+                </div>
+                <span></span>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="tools">
+            <div class="tools__title">
+                <div class="tools__title-link">
+                    <span></span>
+                    <h3>Играть можно в браузере</h3>
+                </div>
+                <h4>Запускайте на любых устройствах</h4>
+                <p>Наш модуль доступен на все популярные ОС
+                    и работает на всех компьютерах.</p>
+                <div class="tools__link">
+                    <a href="#!">
+                        <h3>Открыть в браузере</h3>
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+            <div class="tools__picture">
+                <img class="tools__picture-bg" src="./img/tools/Ellipse 8.png" alt="bg">
+                <img class="tools__picture-img" src="./img/tools/tools.png" alt="tools">
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="map">
+            <div>
+                <div class="map__title">
+                    <span></span>
+                    <h3>Игровые сервера на карте</h3>
+                </div>
+                <h4>Карта локаций</h4>
+            </div>
+            <img src="./img/map/map.png" alt="map">
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__pic">
+            <img src="./img/footer/logo.svg" alt="logo">
+            <p>2022. All rights reserved.</p>
+            <img src="./img/footer/logoD.svg" alt="logoD">
+        </div>
+        <div>
+            <ul class="footer__socials">
+                <li><a href="#!">Политика конфиденциальности</a></li>
+                <li><a href="#!">Файлы Coocie</a></li>
+                <li>
+                    <a href="#!"><img src="./img/footer/VK com.svg"></a>
+                    <a href="#!"><img src="./img/footer/Discord.svg"></a>
+                    <a href="#!"><img src="./img/footer/YouTube.svg"></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+<!-- <link rel="stylesheet" href="https://www.figma.com/file/RgFC03AHQt0I6ElRvsNnlc/Warplaycloud-%2B?node-id=24%3A36&mode=dev"> -->
